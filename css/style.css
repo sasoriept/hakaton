@@ -2,13 +2,12 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Medium';
 }
 @font-face {
 	font-family: 'Medium'; 
 	src: url(../css/fonts/Literata_24pt-Medium.ttf); 
 }
- 
-/* Жирный */
 @font-face {
 	font-family: 'Bold'; 
 	src: url(../css/fonts/Ubuntu-Regular.ttf); 
@@ -17,9 +16,10 @@
 	font-family: 'ubuntu'; 
 	src: url(../css/fonts/Ubuntu-Italic.ttf); 
 }
+
 p {
     margin-bottom: 0 !important;
-    font-family: "Medium";
+    font-family: 'Medium' ;
 
 }
 h1{
@@ -64,32 +64,25 @@ color: red !important;
 .nav-link {
     font-size: 1.1em !important;
 }
-
-#fixed {
-    height: 600px;
+.block1_1 {
     background: url('../img/image\ 1\ \(3\)\ копия\ 1.png') no-repeat center fixed;
+    height: 600px;
+    width: 100%;
     display: flex;
-    background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-}
-
-
-.carousel-caption {
-    display: flex;
-    /* width: 70%; */
-    position: absolute;
-    top: 30%;
-    transform: translateY(-20%);
+    flex-direction: column;
+align-items: center;
+justify-content: center;
     text-shadow: 1px 1px 10px #000;
+    color: white;
 }
 
-.display-6 {
-    padding-top: 20px;
+.p2 {
     font-family: 'ubuntu' !important;
      width: 70%;
+     text-align: center;
 }
-.display-3{
+.p1{
+    text-align: center;
     font-size: 60px;
     font-family: "Bold" !important;
 
@@ -112,10 +105,6 @@ ul {
 
 }
 
-/* .navbar-nav ml-auto{
-    gap: 60px !important;
-} */
-
 .header_up {
     display: flex;
     align-items: center;
@@ -125,8 +114,10 @@ ul {
 .info {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 180px;
+    margin-bottom: 100px;
+    
     align-self: center;
+    
 }
 
 section {
@@ -170,12 +161,6 @@ footer {
     margin: 0 auto;
 }
 
-.carousel-caption {
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    flex-direction: column;
-}
 /* .modal{
     position: absolute;
     width: 100%;
@@ -203,10 +188,7 @@ justify-content: space-around;
 }
 
 .one{
-    /* display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-     */
+    
     column-gap: 10%;
     row-gap:10%;
     margin-top: 70px;
@@ -274,14 +256,16 @@ justify-content: space-around;
 
 @media (max-width:1100px) {
 
-
-    .display-6 {
+    .info{
+        font-size: 20px !important;
+    }
+    .p2 {
         font-size: 20px;
         font-family: 'Medium';
 
     }
 
-    .display-3{
+    .p1{
         font-size: 50px;
         font-family: "Bold";
     }
@@ -325,12 +309,18 @@ justify-content: space-around;
 .content p{
     font-size: 18px !important;
 }
+.title{
+    font-size: 35px;
+}
 
-    .carousel-caption{
-        justify-content: flex-end;
-    }
+.block1_1{
+height: 450px;
+}
 
-.display-3{
+.text{
+    font-size: 18px;
+}
+.p1{
     font-size: 35px;
 }
     
@@ -354,10 +344,12 @@ justify-content: space-around;
         margin-right: 5px;
     font-weight: 500;
     }
-    
+
+   
+
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
     footer {
         font-size: x-small;
         padding: 0%;
@@ -365,8 +357,81 @@ justify-content: space-around;
     .content h1{
         font-size: 40px;
     }
+    .text{
+        font-size: 14px;
+    }
+    .content p{
+        font-size: 14px !important;
+    }
+    .vibor{
+        font-size:19px !important;
+    }    
 }
 
+@media (max-width:500px){
+.block1_1{
+    height: 300px;
+}
+.ima{
+    font-size: small;
+}
+.logo{
+    height: 30px !important;
+}
+
+footer img{
+    height: 30px ;
+width: 30px;
+}
+
+.p1{
+    font-size:larger;
+}
+.p2{
+    font-size: medium;
+}
+.reki-parki{
+    Width:150px;
+    Height:70px;
+    background-color: white;
+    border-color: red;
+    border-style: solid;
+    border-radius: 15px;
+    color: #000;
+    font-size: 18px !important;
+    margin-bottom: 30px;
+    font-weight: 500;
+    border-radius: 10px;
+
+}
+
+
+.vibor{
+    font-size:18px !important;
+}
+}
+
+@media (max-width:400px){
+    .reki-parki{
+        Width:130px;
+        Height:50px;
+        font-size: 14px !important;
+    }
+        .vibor{
+            font-size:18px !important;
+        }
+}
+
+@media (max-width:350px){
+    .reki-parki{
+        Width: 100px;
+        Height:40px;
+        font-size: 12px !important;
+    }
+    .vibor{
+        font-size:14px !important;
+    }
+}
 
 
 .imginfo {
