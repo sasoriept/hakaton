@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Удмуртия на ладони</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/tile_8314052 2.png" type="image/png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <div class="header_up">
+                <a href="#" class="navbar-brad"><img class="logo" src="img/tile_8314052 2.png"></a>
+                <a class="ima">УДМУРТИЯ НА ЛАДОНИ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <hr class="headerhr">
+            <div class="header_down">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link ">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="onas.html" class="nav-link ">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link openModal " id="myBtn">Достопримечательности</a>
+                            <!-- <div class="modal">
+                                <div class="window"><button class="close">close</button> </div>
+                            </div> -->
+                            <div id="myModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">×</span>
+                                    <h2 class="vibor">Выберите достопримечательности, которые вас интересуют :</h2>
+                                      <div class="glav">
+                                        <div class="one">
+                                            <a class="reki-parki" href="reki.html" role="button">Реки</a>
+                                            <a class="reki-parki" href="parki.html" role="button">Парки</a>
+                                        </div>
+                                        <div class="one">
+                                            <a class="reki-parki" href="zapov.html" role="button">Заповедники</a>
+                                            <a class="reki-parki" href="interesting.html" role="button">Интересные места</a>
+                                        </div> 
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <figure>
+        <div class="block1">
+                <div class="block1_1">
+                <h1 class="p1">ПРИРОДНЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ УДМУРТСКОЙ РЕСПУБЛИКИ </h1>
+                <h2 class="p2">На этом сайте предоставлены самые ВОСХИТИТЕЛЬНЫЕ природные достопримечательности в
+                    Удмуртии </h2>
+            </div>
+        </div>
+    </figure>
+    <section>
+        <h1 class="title">Удмуртская республика
+        </h1>
+        <div class="info">
+            <p class="text">Природа Удмуртии богата и живописна, по растительному покрову относится к таежной зоне.
+                Примерно 44%
+                территории покрыто лесом. Наиболее распространены ель, береза, сосна и осина, встречается дуб. <br> <br>
+                Основное природное богатство Удмуртии - лес. Недра её тоже не бедны, в них имеются значительные
+                месторождения нефти. Кроме того, есть небольшие запасы марганцевых руд, медистых песчаников, минеральных
+                красок. Обильна Удмуртия и торфом. Хороши здесь и минеральные источники.</p>
+            <img src="./img/image 5.png" alt="" class="imginfo">
+        </div>
+        <div class="info">
+            <img src="./img/image 2.png" alt="" class="imginfo">
+            <p class="text">Почти вся территория Удмуртии лежит на Восточно-Европейской равнине, поэтому она ровная, как
+                стол – высшая точка республики лежит на отметке в 332,6 метра. Климат тут отличается сильными сезонными
+                колебаниями – летом здесь жарко, а зимой холодно, иногда случаются заморозки до — 50 °C.</p>
+        </div>
+    </section>
+    <footer>
+        <hr class="footerhr">
+        <div class="infofooter">
+            <div class="header_up">
+                <a href="#" class="navbar-brad">
+                    <img src="img/tile_8314052 2.png" width="42px" height="42px">
+                </a>
+                <a>УДМУРТИЯ НА ЛАДОНИ</a>
+            </div>
+            <p>Г. Ижевск, ИПЭК</p>
+            <p>+7 982 836 95 04 <br>karina.fdorova.05@mail.ru </p>
+        </div>
+    </footer>
+</body>
+
+<script>
+    // document.querySelector('.openModal').addEventListener('click', () => {
+    //     console.log(1)
+    //     document.querySelector('.modal').style.display = 'flex'
+    // })
+    // document.querySelector('.close').addEventListener('click', () => {
+    //     document.querySelector('.modal').style.display = 'none'
+    // })
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
